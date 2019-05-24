@@ -1,0 +1,12 @@
+<header>
+<nav class="ui center aligned container">
+
+        <div class="ui text stackable menu">
+            {{ $currentPage := . }}
+            {{ range sort .Site.Menus.main }}
+                <a class="item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+                <a class="item" href="mailto:hello@mmdesign.studio">contact</a>
+        </div>
+</nav>
+</header>

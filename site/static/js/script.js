@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $("#lightgallery").lightGallery({
+    	thumbnail:true,
+    	share:false,
+    	zoom:false,
+    	fullScreen:false,
+    	autoplayControls:false,
+    });
+});

@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="ui center aligned stackable grid container">
+    <div class="eight wide column">
+    <h1 class="title">{{ .Params.Description }}</h1>
+
+    <table class="ui very basic compact fixed table">
+        <tr>
+            <td class="top aligned right aligned">studio:</td>
+            <td>{{ .Params.studio }}</td>
+        </tr>
+        <tr>
+            <td class="top aligned right aligned">location:</td>
+            <td>{{ .Params.location }}</td>
+        </tr>
+        <tr>
+            <td class="top aligned right aligned">project year</td>
+            <td>{{ .Params.year }}</td>
+        </tr>
+        <tr>
+            <td class="top aligned right aligned">scope of work:</td>
+            <td>{{ .Params.scope }}</td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="ui centered stackable grid container">
+            <div class="eight wide column" id="lightgallery">
+                {{ range $index, $img := .Params.img }}
+                    <a href="{{ $img }}" data-download-url="false">
+                        <img src="{{ $img }}">
+                    </a>
+                {{ end }}
+            </div>
+    </div>
+</div>
+{{ end }}

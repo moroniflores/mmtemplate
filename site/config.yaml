@@ -1,0 +1,25 @@
+
+baseURL: /
+title: "Example"
+defaultContentLanguage: en
+languages:
+  en:
+    lang: en
+    languageName: English
+    weight: 1
+MetaDataFormat: "yaml"
+
+menu:
+  main:
+  - name: home
+    pre: 
+    url: /
+    weight: 1
+  - name: about
+    pre: 
+    url: /about/
+    weight: 2
+  - name: portfolio
+    pre: 
+    url: /portfolio/
+    weight: 3
