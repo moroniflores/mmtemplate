@@ -19,7 +19,7 @@ menu:
     pre: 
     url: /about/
     weight: 2
-  - name: portfolio
-    pre: 
-    url: /portfolio/
-    weight: 3
+  # - name: portfolio
+  #   pre: 
+  #   url: /portfolio/
+  #   weight: 3

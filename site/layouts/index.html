@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div class="ui two column stackable grid container">
-        {{ range first 10 .Pages }}
+        {{ range (.Paginator 10).Pages }}
             <div class="column">
                 <a href="{{ .Permalink }}"><img src="{{ .Params.cover }}"></a>
                 <!-- <h1>{{ .Params.Title }}</h1> -->
