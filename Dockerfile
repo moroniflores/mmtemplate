@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:stable-slim
 
 RUN apt-get -qq update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends libstdc++6 python-pygments git ca-certificates asciidoc curl \
